@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-orange-600">Clothify</h1>
+            <nav class="space-x-4">
+                <a href="index.html" class="text-gray-700 hover:underline">Home</a>
+                <a href="cart.html" class="text-gray-700 hover:underline">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Checkout</h2>
+        <form class="bg-white p-6 shadow rounded-lg">
+            <label class="block mb-2 text-gray-700">Name</label>
+            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Your Name">
+            
+            <label class="block mb-2 text-gray-700">Address</label>
+            <textarea class="w-full p-2 border rounded mb-4" placeholder="Your Address"></textarea>
+            
+            <label class="block mb-2 text-gray-700">Payment Method</label>
+            <select class="w-full p-2 border rounded mb-4">
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>UPI</option>
+                <option>Cash on Delivery</option>
+            </select>
+            
+            <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded">Place Order</button>
+        </form>
+    </main>
+</body>
+</html>
